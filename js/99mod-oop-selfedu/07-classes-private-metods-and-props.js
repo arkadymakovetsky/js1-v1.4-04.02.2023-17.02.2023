@@ -5,8 +5,8 @@ JavaScript ООП #7: Приватные методы и свойства, оп�
 "use strict";
 
 class Users {
-    #name;
-    #age;
+    #name; // Приватные св-ва
+    #age;  // Приватные св-ва
 
     constructor(name, age) {
         this.#name = name;
