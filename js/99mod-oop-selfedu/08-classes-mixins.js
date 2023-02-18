@@ -3,6 +3,7 @@
 JavaScript ООП #8: Примеси (Mixins). Что это, где и для чего используются
 */
 "use strict";
+
 let ShopMixin = {
     getPrice() { return 0; },
     getWeight() { return 0; },
