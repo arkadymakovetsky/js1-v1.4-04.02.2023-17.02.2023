@@ -1,13 +1,4 @@
-﻿// Консультация по материалам курса
-// 
-
-// Консультации от получаса (курсы, практика, решение задач, объяснение сложных тем, подготовка к собеседованию)
-// 3992d5c123c8@mail.ru
-
-// https://www.youtube.com/htmllabru
-// https://t.me/htmllab
-
-// Полезные видео
+﻿// Полезные видео
 /*
 console log и другие инструменты Google Chrome
 https://www.youtube.com/watch?v=eMh0WSwWsbY
