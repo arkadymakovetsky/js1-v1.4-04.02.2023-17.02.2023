@@ -1,18 +1,20 @@
-// Взято из видео урока от selfedu
-// JavaScript ООП #4: Классы - class, методы и свойства, Class Expression
+/*
+Видео урок от selfedu:
+JavaScript ООП #4: Классы - class, методы и свойства, Class Expression
+*/
 "use strict";
 function createFruit(name, weight) {
     return class {
-        type = "fruit"
+        #type = "fruit";
         constructor() {
             this.name = name;
             this.weight = weight;
         }
         showInfo() {
-            return `${this.name} ${this.weight}`;
+            return `${this.#type}: ${this.name} ${this.weight}`;
         }
         toString() {
-            return `${this.name}=${this.weight}`;
+            return `${this.#type}: ${this.name} - ${this.weight}`;
         }
     }
 }
