@@ -13,7 +13,8 @@ class Goods {
   }
 }
 
-/* Создать класс наследник Phone со свойством _type и значением "смартфон" и переопределить конструктор Goods */
+/* Создать класс наследник Phone со свойством _type и значением "смартфон" и 
+переопределить конструктор Goods */
 class Phone extends Goods {
   constructor(title, price) {
     super(title, price);
@@ -21,7 +22,11 @@ class Phone extends Goods {
   }
 }
 
-let goods = [new Goods("JavaScript", 900), new Phone("Nokia 3100", 900)];
+let goods = [
+  new Goods("JavaScript", 900), 
+  new Phone("Nokia 3100", 900)
+];
+
 goods.forEach((item) => {
   console.log(item.show());
 });

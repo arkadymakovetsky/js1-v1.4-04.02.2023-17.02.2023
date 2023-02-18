@@ -122,8 +122,28 @@ var j = 0;
 console.log(++j); //1
 console.log(j);
 
+
+// Практическое задание
+console.clear();
+
 // Определить какой  тип данных у величины "Мир"
+console.log("typeof 'Мир' -->", typeof "Мир"); //string
+
 // Определить находится ли зарплата 120000 в диапазоне 150000 и 200000
+console.log("Зарплата 120000 в [150000-200000] -->", 120_000 >= 150_000 && 120_000 <= 200_000); //false
+
 // Есть переменные flag = true и amount = 100, определить является ли true условие, когда flag - истина И amount равен 150
+let vflag = true;
+let amount = 100;
+console.log("" + true + "==" + vflag + " && " + amount + "==150 -->", vflag && amount == 150) //false
+
 // Дана функция y = x * x. Найти значение y при x = 23
+let x = 23;
+let y = x * x;
+console.log(x + " * " + x + " =", y); //529
+console.log(`y = ${x * x}`);
+
 // Дана функция y = x * x * x * x. Найти значение y при x = 23
+y = Math.pow(x, 4);
+console.log(x + " ** " + 4 + " =", y); //279841
+console.log(`y = ${y}`);

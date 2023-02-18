@@ -16,13 +16,14 @@ dt = new Date();
 console.log(dt);
 console.log(dt.toISOString());
 
-console.log(
-  dateFns.format(dt, "'Todday is a' eeee MMMM")
-)
+// console.log(
+//   dateFns.format(dt, "'Todday is a' eeee MMMM")
+// )
 
 dt.setMonth(7);
 
 console.log(dt.getTime());
+console.log(dt.getDate());
 console.log(dt.getDay());
 console.log(dt.getMonth());
 console.log(dt.getFullYear());
@@ -68,7 +69,8 @@ const fn = dt => {
 
   return `${word(diff, 'дней', 'день', 'дня')} назад`
 }
-console.clear();
+
+// console.clear();
 console.log( fn(new Date(2022, 2, 1)) ); //31 
 console.log( fn(new Date(2022, 0, 1)) ); //90
 

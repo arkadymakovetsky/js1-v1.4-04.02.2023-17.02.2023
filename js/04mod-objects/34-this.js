@@ -32,3 +32,10 @@ for (let p in cat1) {
 // console.log(dog1.sound()); //Шарик
 // console.log(dog2.sound()); //Гром
 // console.log(dog3.sound()); //Чиби
+let dog1 = { name: 'Шарик', sound: function () { return `${this.name}: гав` } }
+let dog2 = { name: 'Гром', sound: function () { return `${this.name}: гав` } }
+let dog3 = { name: 'Чиби', sound(num=1) { return `${this.name}: ${'гав-'.repeat(num)}` } }
+console.log(dog1.sound()); //Шарик: гав
+console.log(dog2.sound()); //Гром: гав
+console.log(dog3.sound()); //Чиби: гав
+console.log(dog3.sound(3)); //Чиби: гав

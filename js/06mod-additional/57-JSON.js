@@ -1,11 +1,9 @@
 ﻿/*
-
 JSON (JavaScript Object Notation) формат данных
 
 Переводы слов с англ.:
 parse - разбор
 stringify - "сделай строкой"
-
 */
 
 let cat = { name: "Барс" };

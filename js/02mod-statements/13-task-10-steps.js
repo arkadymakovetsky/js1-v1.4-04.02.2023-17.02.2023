@@ -10,3 +10,29 @@
 // шаг №8
 // шаг №9
 // шаг №10
+const STEPS = 10;
+
+// Вариант 1
+{
+  let i = 1;
+
+  while (i <= STEPS) {
+      console.log(`шаг №${i}`);
+      i++;
+    }
+
+    console.log('***************\n');
+}
+
+// Вариант 2
+{
+  let i = 1;
+  let res = '';
+  
+  while (i <= STEPS) {
+      res += `Шаг №${i}\n`;
+      i++;
+    }
+  
+  console.log(res);
+}

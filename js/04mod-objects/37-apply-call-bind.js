@@ -10,10 +10,10 @@ binding - связывание
 
 
 let cat1 = {
-  name:'Мурзик', 
-  age: 9 
+  name: 'Мурзик',
+  age: 9
 };
-function addYear(){
+function addYear() {
   this.age++;
 }
 addYear.apply(cat1);
@@ -21,7 +21,7 @@ addYear.call(cat1);
 console.log(cat1);
 
 
-function changeColor( c ){
+function changeColor(c) {
   this.color = c;
 }
 changeColor.apply(cat1, ['orange']);

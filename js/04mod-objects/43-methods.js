@@ -28,8 +28,7 @@ console.log(['q','w','e','r','t','y'].slice(2,4));
 console.log(['q','w','e','r','t','y'].slice(2,-2));
 console.log(['q','w','e','r','t','y'].slice(-4,-5));
 
-/*
-console.log( arr.map( function(item){
-    return item * 2
-}) );
-*/
+
+//-------- Практика ----------
+// Метод map (пример использования)
+console.log('<ul>\n' + arr.map(item => `\t<li>${item}</li>\n`).join('') + '</ul>');

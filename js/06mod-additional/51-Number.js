@@ -31,8 +31,3 @@ class Math2 {
     }    
  }
  console.log( Math2.sum([10,20,30]) )
-
-
-
-
-
