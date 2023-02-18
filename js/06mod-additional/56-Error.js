@@ -33,12 +33,16 @@ const sum = (...a) => {
   let result = 0;
   for (let i = 0; i < a.length; i++) {
     if (typeof a[i] != 'number') {
-      throw new Error(`Аргумент ${i} со значением ${a[i]} не является числовым`)
+      throw new Error(`Ошибка sum(): аргумент ${i + 1} со значением ${a[i]} не является числовым`)
     }
     result += a[i];
   }
   return result;
 }
 
-console.log(sum(10, 20, 30));
-// console.log( sum(10, 20, 30, '40') );
+try {
+  console.log(sum(10, 20, 30));
+  console.log(sum(10, 20, 30, '40'));
+} catch (err) {
+  console.log(err.message);
+}
